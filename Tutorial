@@ -1,0 +1,78 @@
+Testing & Optimizing for Publishing
+
+Make your ARfilter experiences run smooth in (Old Android, Android & iOS)
+
+If ever wanted to create an awesome filter in Spark the Testing and Optimizing assets its a key and important part of crafting your ideas into filters. This walkthrough will give you ideas and tools to make your filters gain extra power from GPU and Ram on devices.
+So this technical paper will discuss the ideal scenerarios and explain the reason why and how create top filters from the Quality Assurance point of View. 
+When we image our experience to be lived in AR we are actually talking about holograms but more specific we are talking about Digital Holograms. Holograms itself are 3D models, 2D models made out of bits tracked to the real work thanks to the power of Neuronal Networks, top engineering and magic. 
+Magic itself its moment when you get WOW by how the experience looks. That moment when your brain can barely understand what is happening.
+We can feel holograms thanks to our sense organs. Visually we can see them running inside AR, VR, MR. And with your hole body to can test the experience. 
+Experiences that stimulate all sense organs makes a bigger impact on User.
+So when designing your exeperience make sure to also think in terms of.
+Smell, Colors, Shapes, where will be played, at what moment should be played the experience. Sounds.
+Augmented Reality Experiences that complement normal experiences enrich the final experience. 
+For example using AR to showcase a product and use the smell to trigger something can lead to sell. New AR Experiences can be designed to trigger some emotions. Now knowing this you could create an experience wisely. 
+For example if you make fitlers that recall something like self damage this could have a bigger impact on peoples life even when the intention of the creator are not made to cause self harm or commit suicide. 
+Filters have a tangible impact in other people life and creators have the power to make changes and the responsibility to use that power right. For those who might still want to make some weird filters, a good way of optimizing your time will be, reading the policy. 
+So save time for testing by testing something you can publish. 
+I'm the type of creator who works solo. The type of creator who doesnt have a team to showcase the techonology. Some time it feels like a lot but once you know how to test and debug its a pretty straig forward process that you could incorporate to your filter development pipeline. 
+1st. Compress it till you make it. 
+2nd. Tested under different circunstances 
+3rd. Make changes.
+This is my secret sauce. This is how I manage to put big files inside a filter. 
+You could have 2 scenarios. The first sceneario its when you know what you want to do. Second scenario its when you go to Spark AR to create to test, to experiment and to remix reality. 
+Spark AR Library its an under stimated resouce that barely anyone use it. 
+If you are a creator like me who enjoys more creating compositions or you lack the skills to create your own 3D models. You can use the Spark AR Library and you will find the best optimized assets for Spark AR that comunicate perfectly with Materials and sizes.
+if you want to create your own assets a good idea its to keep it as low as possible. When ever you can between 600kb and 1mb. 
+My creation pipeline is like this.
+3D software > Spark AR > Substance Painter > Tinypng.com > Spark AR 
+I use Cinema4D for face sculpt, Maya for hard surfaces and UV Mapping and Blender for optimize it.
+In blender you can reduce the poly count thanks to an official tool made the Spark AR Team called "Spark AR Tool" that you can download at Spark AR website under Blog. 
+if you keep the 3D object at a position of 0,0,0 then you should not need to re-center the object and also if you are making the object using a 3D sofware you know that the file needs to be between 600kb and 1mb. 
+The top weigh of a filter its in the worst sceneario 2mb. idealy 600kbs as the best of the best and 1mb as a good and 1.5mb as something that still needs to be optimized. 
+The less assets are in your project the faster your filter could be approve it if it sticks to the Policies of Spark AR publishing.
+Here is a loading time based on filter size:
+600kbs  →about 4seconds to load
+1mb →about 7 seconds to load 
+1.5mb →about 12 seconds to load
+2mb →about 16 seconds to load
+2.5mb  →about 22 seconds to load
+3mb →about 32 seconds to load
+3.5mb→37 seconds
+4mb→ about 45 seconds to load
+As you can see the loading time makes bigger and it can go exponentially depending on your internet connection. 
+So idealy if you make a super cool filter it should be take no more than 15 seconds to load. If takes longer than that amount of time people tend to thing the filter it's not downloading it and cancels the process of loading the filter and re download. The best practice its to keep the file size as low as possible. 
+Make filters that people love, not filters that people hate it. 
+From the point of view of someone of UX a bad user experience would be having a filter that looks really good but that performs really bad and ends in a bad UX. 
+If you mantain the filter size low you will have a great performance. The greatest filters I had test use Shaders to draw and color the whole filter. 
+Shaders are a great way to make complex filters and low weight. Because are low weight it perform better than average filters that use Png and JPG textures to create art in the filter.
+Some complex filters look good and perform good. This is the case of filters how know how to opmize the filter so doesnt behave laggy. 
+When to test a filter? 
+I make unit testing (test one feature at the time) and performance testing (testing the filter in diferent circunstances). The ideal scenario would be a place in your house or company where you have many Android / Old Android / iOS devices and you can test your filters but for mostly all of mortals, we have about 2 or 3 phones where you can test your filters. 
+Unless you have your own equipment to test a good idea its to ask friends to test your filter and get some feedback. Ask Mom or Dad or a nearby person of your trust if it can try the filter in his phone. 
+Filters on iOS & Android filters doesnt the same and this is why its so important the performance and testing to publish filters. 
+My secret recepy, this is how I test when I'm alone.
+Step 1: Charge the phone at 100%
+Step 2: Test your filter (if perform laggy, Compress it till you make it)
+Step 3: Let your battery be 75% with same device 
+Step 4: Test your filter (if perform laggy, Compress it till you make it)
+Step 5: Let your battery be 50% with same device
+Step 6: Test your filter (if perform laggy, Compress it till you make it)
+Step 7: Let your battery be 30% with same device
+Step 8: Test your filter (if perform laggy, Compress it till you make it)
+Step 9: Let your battery be 20% with same device
+Step 10: Test your filter (if perform laggy, Compress it till you make it)
+Step 11: Let your battery be 10% with same device
+Step 12: Test your filter (if perform laggy, Compress it till you make it)
+Step 13: Let your battery be 1% with same device
+Step 14: Test your filter if performs laggy compress it even more if performs ok then it should perform better with more battery. 
+I usually repeat the whole process or go directly to 1% baterry testing. If the phone doesn't die in the process then I will have a really good and performant filter. 
+If the phone blacks out and runs out of battery then I need you should restart with step 1. Once you have a good performace at 1% battery the filter will behave the same despite if the phone or tablet runs at 20%. From 100% Battery to 20% the filter performance behave almost the same. 
+Once a phone enteres 19% or getting lower the phone will try to maximize battery life agains performance. 
+Finally Shaders and SDF. 
+if you want to make awesome filters you will start using your skills at photoshop, after effects and so on but a good thing to know is that Spark AR have a thing called SDF that use the power of shaders to create complex shapes and color.
+By substituting the Photos to SDF to create color paletes you could save some filter weight. You can find the SDF Patch in the patch editor and start experimenting with them.
+Automatization Testing: 
+Currently there is no way to systematically test filters using things like cucumber or Selenium. The current way of testing filter right now its by manual testing by checking and doing Unit Testing and Integration testing with Performance Testing in mind. 
+Now with this quick tips, mini-charts, ideas and my recipes for my everyday work I hope you have another perspective on how to make really complex filters perform really good in all devices. 
+Now you know.. Compress it till you make it!
